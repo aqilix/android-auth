@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorhint">#a9aaac</color>
+    <color name="aqilixDark">#0D1B1E</color>
+    <color name="aqilixTosca">#21929A</color>
 </resources>
