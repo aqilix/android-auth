@@ -77,7 +77,7 @@
             <com.aqilix.fonts.LatoTextView
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
-                android:id="@+id/Signup"
+                android:id="@+id/signup"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_width="match_parent"
