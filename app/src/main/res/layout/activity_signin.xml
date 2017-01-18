@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/aqilixDark">
+
+        <ImageView
+            android:contentDescription="logo"
+            android:layout_width="300dp"
+            android:layout_height="64dp"
+            android:src="@drawable/aqilix_dark_256_57"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_above="@+id/acc"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.aqilix.fonts.LatoEditText
+            android:id="@+id/email"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginLeft="46dp"
+            android:textColorHint="@color/colorhint"
+            android:textColor="@color/aqilixDark"
+            android:maxLength="12"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="left"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="#dad8d8"/>
+
+        <com.aqilix.fonts.LatoEditText
+            android:id="@+id/password"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
+            android:textColorHint="@color/colorhint"
+            android:textColor="@color/aqilixDark"
+            android:background="#0000"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/eye"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="25dp"
+            android:background="#dad8d8"/>
+
+        <com.aqilix.fonts.LatoTextView
+            android:id="@+id/signin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/aqilixTosca"
+            android:text="Sign in"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:padding="9dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="25dp"
+            />
+    </LinearLayout>
+
+    <com.aqilix.fonts.LatoTextView
+        android:id="@+id/acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have account?"
+        android:layout_above="@+id/create"
+        android:gravity="center"
+        android:lines="1"
+        />
+
+    <com.aqilix.fonts.LatoTextView
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create one now"
+        android:textColor="#2b73e1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:lines="1"
+        android:layout_marginBottom="22dp"
+        />
+</RelativeLayout>
