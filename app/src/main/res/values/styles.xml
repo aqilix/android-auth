@@ -21,4 +21,13 @@
 
     <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorhint</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/aqilixTosca</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/aqilixDark</item>
+    </style>
+
 </resources>
