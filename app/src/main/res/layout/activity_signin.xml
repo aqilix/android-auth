@@ -28,21 +28,23 @@
         android:orientation="vertical">
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/emailWrapper"
-            android:layout_width="fill_parent"
+            android:id="@+id/signinEmailWrapper"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
             android:theme="@style/TextLabel">
             <com.aqilix.fonts.LatoEditText
-                android:id="@+id/email"
+                android:id="@+id/signinEmail"
+                android:inputType="textEmailAddress"
                 android:textSize="20sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
-                android:layout_marginLeft="46dp"
                 android:textColorHint="@color/colorhint"
                 android:textColor="@color/aqilixDark"
-                android:maxLength="12"
+                android:maxLength="64"
                 android:background="#0000"
                 android:padding="16dp"
                 android:gravity="left"
@@ -58,24 +60,24 @@
             android:background="#dad8d8"/>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/passwordWrapper"
-            android:layout_width="fill_parent"
+            android:id="@+id/signinPasswordWrapper"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
             android:theme="@style/TextLabel">
             <com.aqilix.fonts.LatoEditText
-                android:id="@+id/password"
+                android:id="@+id/signinPassword"
+                android:inputType="textPassword"
                 android:textSize="20sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
-                android:layout_marginLeft="46dp"
-                android:layout_marginRight="46dp"
                 android:textColorHint="@color/colorhint"
                 android:textColor="@color/aqilixDark"
                 android:background="#0000"
                 android:padding="16dp"
-                android:inputType="textPassword"
                 android:drawableRight="@drawable/eye"
                 />
         </android.support.design.widget.TextInputLayout>
