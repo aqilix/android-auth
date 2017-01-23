@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -45,12 +46,12 @@ public class SigninActivity extends AppCompatActivity implements Validator.Valid
         setContentView(R.layout.activity_signin);
 
         // inputTextLayout
-        tilEmailWrapper = (TextInputLayout) findViewById(R.id.signinEmailWrapper);
-        tilPasswordWrapper = (TextInputLayout) findViewById(R.id.signinPasswordWrapper);
+        tilEmailWrapper = (TextInputLayout) findViewById(R.id.credEmailWrapper);
+        tilPasswordWrapper = (TextInputLayout) findViewById(R.id.credPasswordWrapper);
 
         // inputText
-        etEmail = (EditText)findViewById(R.id.signinEmail);
-        etPassword = (EditText)findViewById(R.id.signinPassword);
+        etEmail = (EditText)findViewById(R.id.credEmail);
+        etPassword = (EditText)findViewById(R.id.credPassword);
 
         // map input text with TextInputLayout
         inputLayoutMapper = new HashMap<Integer, TextInputLayout>();
@@ -76,6 +77,9 @@ public class SigninActivity extends AppCompatActivity implements Validator.Valid
         signinBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.i("Signin", "Process...");
+                tilEmailWrapper.setErrorEnabled(false);
+                tilPasswordWrapper.setErrorEnabled(false);
                 signinValidator.validate();
             }
         });

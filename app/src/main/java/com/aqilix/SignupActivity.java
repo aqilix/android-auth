@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -42,12 +43,12 @@ public class SignupActivity extends AppCompatActivity implements Validator.Valid
         setContentView(R.layout.activity_signup);
 
         // inputTextLayout
-        tilEmailWrapper = (TextInputLayout) findViewById(R.id.signupEmailWrapper);
-        tilPasswordWrapper = (TextInputLayout) findViewById(R.id.signupPasswordWrapper);
+        tilEmailWrapper = (TextInputLayout) findViewById(R.id.credEmailWrapper);
+        tilPasswordWrapper = (TextInputLayout) findViewById(R.id.credPasswordWrapper);
 
         // inputText
-        etEmail = (EditText)findViewById(R.id.signupEmail);
-        etPassword = (EditText)findViewById(R.id.signupPassword);
+        etEmail = (EditText)findViewById(R.id.credEmail);
+        etPassword = (EditText)findViewById(R.id.credPassword);
 
         // map input text with TextInputLayout
         inputLayoutMapper = new HashMap<Integer, TextInputLayout>();
@@ -73,6 +74,9 @@ public class SignupActivity extends AppCompatActivity implements Validator.Valid
         signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.i("Signup", "Process...");
+                tilEmailWrapper.setErrorEnabled(false);
+                tilPasswordWrapper.setErrorEnabled(false);
                 signupValidator.validate();
             }
         });
