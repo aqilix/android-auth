@@ -1,0 +1,11 @@
+<resources>
+    <string name="aqilix_api_url">https://aqilix.xyz</string>
+    <string name="aqilix_api_header_content_type">application/json</string>
+    <string name="aqilix_api_header_accept">application/json</string>
+    <string name="aqilix_api_header_accept_v1">application/vnd.aqilix.bootstrap.v1+json</string>
+    <string name="aqilix_api_header_content_type_v1">application/vnd.aqilix.bootstrap.v1+json</string>
+    <string name="aqilix_api_auth_uri">/oauth</string>
+    <string name="aqilix_api_auth_grant_type">password</string>
+    <string name="aqilix_api_auth_client_id">ios</string>
+    <string name="aqilix_api_auth_client_secret">client1234</string>
+</resources>
